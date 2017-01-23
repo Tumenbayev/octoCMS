@@ -55,8 +55,8 @@ return [
         'mysql' => [
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'port'      => '',
-            'database'  => 'database',
+            'port'      => '3306',
+            'database'  => 'october',
             'username'  => 'root',
             'password'  => '',
             'charset'   => 'utf8',
