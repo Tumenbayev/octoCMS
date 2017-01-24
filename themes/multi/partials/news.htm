@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="section-header">
+        <h2 class="section-title text-center wow fadeInDown">Последние новости</h2>
+        <p class="text-center wow fadeInDown">Список последних новостей нашей компании</p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-6">
+          <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
+                <article>
+                  <header class="entry-header">
+                      <div class="entry-thumbnail">
+                          <img class="img-responsive" src="{{ news.getBigNews.attachments[0].path }}" alt="">
+                          <span class="post-format post-format-video"><i class="fa fa-film"></i></span>
+                      </div>
+                      <div class="entry-date">{{ news.getBigNews.created_at }}</div>
+                      <h2 class="entry-title"><a href="#">{{ news.getBigNews.title }}</a></h2>
+                  </header>
+
+                  <div class="entry-content">
+                      <P>{{ news.getBigNews.description|raw }}</P>
+                      <a class="btn btn-primary" href="#">Читать далее</a>
+                  </div>
+                </article>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+          {% for item in news.getNews %} <!--Вызывем метод getPosts в нашем компоненте и проходимся циклом по полученынм запиям!-->
+          {% if loop.first %}
+          <!-- НИЧЕГО -->
+          {% else %}
+            <div class="blog-post blog-media wow fadeInRight" data-wow-duration="300ms" data-wow-delay="0ms">
+                <article class="media clearfix">
+                  <header class="entry-header">
+                      <div class="entry-thumbnail">
+                          <img class="img-responsive" src="{{ item.attachments[0].path }}" alt="">
+                          <span class="post-format post-format-video"><i class="fa fa-film"></i></span>
+                      </div>
+                      <div class="entry-date">{{ item.created_at }}</div>
+                      <h2 class="entry-title"><a href="#">{{ item.title }}</a></h2>
+                  </header>
+
+                  <div class="entry-content">
+                      <P>{{ item.description|raw }}</P>
+                      <a class="btn btn-primary" href="#">Читать далее</a>
+                  </div>
+                </article>
+            </div>
+      {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+</div>

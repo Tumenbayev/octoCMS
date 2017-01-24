@@ -15,20 +15,8 @@ description = "News layout"
     {% partial "slides" %}
 </section><!--/#main-slider-->
 
-<section id="cta" class="wow fadeIn">
-    <div class="container">
-        <div class="row">
-          {% for item in news.getNews %} <!--Вызывем метод getPosts в нашем компоненте и проходимся циклом по полученынм запиям!-->
-              <h4>{{ item.title }}</h4> <!--Выводим заголовок!-->
-              <p>{{ item.description|raw }}</p> <!--Выводим описание!-->
-              <img src="{{ item.attachments[0].path }}"> <!--Выводим первую картинку из наших вложений!-->
-          {% endfor %}
-        </div>
-    </div>
-</section><!--/#cta-->
-
 <section id="blog">
-    {% partial "blogs" %}
+    {% partial "news" %}
 </section><!--/#blog-->
 
 <section id="contact">

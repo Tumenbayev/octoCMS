@@ -15,6 +15,9 @@ class News extends ComponentBase
     {
         return NewsModel::orderBy('id', 'desc')->get();
     }
+    public function getBigNews(){
+        return NewsModel::orderBy('id', 'desc')->first();
+    }
     public function defineProperties()
     {
         return [];
