@@ -1,0 +1,13 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Заголовок
+    description:
+        label: Описание
+        type: richeditor #стандартный wysiwyg редактор
+    attachments:
+        label: Файлы
+        type: fileupload

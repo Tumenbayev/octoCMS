@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Новости
+
+# Model Form Field configuration
+form: $/adilbek/news/models/news/fields.yaml
+
+# Model Class name
+modelClass: Adilbek\News\Models\News
+
+# Default redirect location
+defaultRedirect: adilbek/news/news
+
+# Create page
+create:
+    title: Создать новость
+    redirect: adilbek/news/news/update/:id
+    redirectClose: adilbek/news/news
+
+# Update page
+update:
+    title: Редактировать новость
+    redirect: adilbek/news/news
+    redirectClose: adilbek/news/news
+
+# Preview page
+preview:
+    title: Предпросмотр новости
