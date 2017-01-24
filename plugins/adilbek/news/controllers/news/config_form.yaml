@@ -3,7 +3,7 @@
 # ===================================
 
 # Record name
-name: Новости
+name: Новость
 
 # Model Form Field configuration
 form: $/adilbek/news/models/news/fields.yaml

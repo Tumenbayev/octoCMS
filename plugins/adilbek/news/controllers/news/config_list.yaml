@@ -9,7 +9,7 @@ list: $/adilbek/news/models/news/columns.yaml
 modelClass: Adilbek\News\Models\News
 
 # List Title
-title: Manage News
+title: Управление новостями
 
 # Link URL for each record
 recordUrl: adilbek/news/news/update/:id
