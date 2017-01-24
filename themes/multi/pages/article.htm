@@ -1,0 +1,10 @@
+url = '/article/:slug'
+layout = 'article'
+==
+use Adilbek\News\Components\News;
+
+function onStart()
+{
+  $this['article'] = News::getNewsBySlug($this->param('slug'));
+}
+==

@@ -1,3 +1,19 @@
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">About Us</h2>
+                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    {% content 'about/video.htm' %}
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    {% content 'about/capabilities.htm' %}
+                </div>
+        </div>
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
 /*
 Template Name: Multi
@@ -41,6 +57,9 @@ a:focus {
 hr {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #fff;
+}
+.news img {
+  width: 90%;
 }
 .gradiant {
   background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
@@ -165,6 +184,10 @@ ul.nostyle i {
 .navbar.navbar-default .navbar-brand {
   height: auto;
   padding: 22px 15px 21px;
+}
+#logo {
+  height: 55px;
+  width: 220px;
 }
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {
@@ -851,6 +874,7 @@ ul.nostyle i {
   font-size: 12px;
   display: block;
   margin-bottom: 5px;
+  margin-top: 15px;
   text-transform: uppercase;
   color: #45aed6;
 }

@@ -1,0 +1,18 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Заголовок
+        required: true
+    slug:
+        label: Человеко-понятный URL
+        required: true
+        placeholder: example (site.com/example)
+    content:
+        label: Описание
+        type: richeditor #стандартный wysiwyg редактор
+    attachments:
+        label: Файлы
+        type: fileupload

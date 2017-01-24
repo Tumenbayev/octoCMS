@@ -82,7 +82,7 @@ class Plugin extends PluginBase
      {
          return [
              'catalog' => [
-                 'label'       => 'Список новостей',
+                 'label'       => 'Список статей',
                  'url'         => \Backend::url('adilbek/news/news'),
                  'icon'        => 'icon-list-alt',
                  'order'       => 500,

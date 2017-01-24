@@ -34,4 +34,5 @@ class News extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = ['attachments' => ['System\Models\File']];
+
 }

@@ -5,6 +5,11 @@
 fields:
     title:
         label: Заголовок
+        required: true
+    slug:
+        label: Человеко-понятный URL
+        required: true
+        placeholder: example (site.com/example)
     description:
         label: Описание
         type: richeditor #стандартный wysiwyg редактор

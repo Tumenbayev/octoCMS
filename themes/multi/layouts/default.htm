@@ -4,7 +4,6 @@ description = "Default layout"
 <html lang="en">
     {% partial "meta" %}
 
-
 <body id="home" class="homepage">
 
 <header id="header">
@@ -23,18 +22,6 @@ description = "Default layout"
     </div>
 </section><!--/#cta-->
 
-<section id="features">
-    {% partial "features" %}
-</section><!--/#features-->
-
-<section id="cta2">
-    <div class="container">
-        <div class="text-center">
-            {% partial "cta2" %}
-        </div>
-    </div>
-</section>
-
 <section id="services" >
     {% partial "services" %}
 </section><!--/#services-->
@@ -47,39 +34,9 @@ description = "Default layout"
     {% partial "about" %}
 </section><!--/#about-->
 
-<section id="work-process">
-    <div class="container">
-        {% content 'process.htm' %}
-    </div>
-</section><!--/#work-process-->
-
-<section id="meet-team">
-    {% partial "team" %}
-</section><!--/#meet-team-->
-
-<section id="animated-number">
-    {% content 'facts.htm' %}
-</section><!--/#animated-number-->
-
-<section id="pricing">
-    {% partial "pricing" %}
-</section><!--/#pricing-->
-
-<section id="testimonial">
-    {% partial "feedback" %}
-</section><!--/#testimonial-->
-
 <section id="blog">
-    {% partial "blogs" %}
+    {% partial "news" %}
 </section><!--/#blog-->
-
-<section id="get-in-touch">
-    <div class="container">
-        <div class="section-header">
-            {% content 'precontact.htm' %}
-        </div>
-    </div>
-</section><!--/#get-in-touch-->
 
 <section id="contact">
     {% partial "contact" %}

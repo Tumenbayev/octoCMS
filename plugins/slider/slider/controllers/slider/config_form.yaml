@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Slider
+
+# Model Form Field configuration
+form: $/slider/slider/models/slider/fields.yaml
+
+# Model Class name
+modelClass: Slider\Slider\Models\Slider
+
+# Default redirect location
+defaultRedirect: slider/slider/slider
+
+# Create page
+create:
+    title: Create Slider
+    redirect: slider/slider/slider/update/:id
+    redirectClose: slider/slider/slider
+
+# Update page
+update:
+    title: Edit Slider
+    redirect: slider/slider/slider
+    redirectClose: slider/slider/slider
+
+# Preview page
+preview:
+    title: Preview Slider

@@ -1,0 +1,10 @@
+url = '/:slug'
+layout = 'post'
+==
+use Post\Post\Components\Post;
+
+function onStart()
+{
+  $this['post'] = Post::getPostBySlug($this->param('slug'));
+}
+==

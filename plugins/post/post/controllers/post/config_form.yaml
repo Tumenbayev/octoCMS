@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Post
+
+# Model Form Field configuration
+form: $/post/post/models/post/fields.yaml
+
+# Model Class name
+modelClass: Post\Post\Models\Post
+
+# Default redirect location
+defaultRedirect: post/post/post
+
+# Create page
+create:
+    title: Create Post
+    redirect: post/post/post/update/:id
+    redirectClose: post/post/post
+
+# Update page
+update:
+    title: Edit Post
+    redirect: post/post/post
+    redirectClose: post/post/post
+
+# Preview page
+preview:
+    title: Preview Post

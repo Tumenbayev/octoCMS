@@ -1,22 +1,14 @@
-==
-<?php
-function onStart()
-{
-    $this["array"] = ['1.jpg','2.jpg','3.jpg'];
-}
-?>
-==
-<div class="owl-carousel">
-            {% for item in array %}
-            <div class="item" style="background-image: url({{ 'assets/images/slider/bg' | theme}}{{item}});">
+
+    <div class="owl-carousel">
+            {% for image in slider.getSlider %}
+            <div class="item" style="background-image: url({{image.attachments.path}});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h2><span>Multi</span> is the best Onepage html template</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
-                                    <a class="btn btn-primary btn-lg" href="#">Read More</a>
+                                    <h2>{{image.title}}</h2>
+                                    <p>{{image.description | raw}}</p>
                                 </div>
                             </div>
                         </div>
