@@ -16,16 +16,16 @@ defaultRedirect: slider/slider/slider
 
 # Create page
 create:
-    title: Create Slider
+    title: Создание слайда
     redirect: slider/slider/slider/update/:id
     redirectClose: slider/slider/slider
 
 # Update page
 update:
-    title: Edit Slider
+    title: Редактирование слайда
     redirect: slider/slider/slider
     redirectClose: slider/slider/slider
 
 # Preview page
 preview:
-    title: Preview Slider
+    title: Предпросмотр слайда

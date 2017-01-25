@@ -16,16 +16,16 @@ defaultRedirect: post/post/post
 
 # Create page
 create:
-    title: Create Post
+    title: Создать страницу
     redirect: post/post/post/update/:id
     redirectClose: post/post/post
 
 # Update page
 update:
-    title: Edit Post
+    title: Редактирование страницы
     redirect: post/post/post
     redirectClose: post/post/post
 
 # Preview page
 preview:
-    title: Preview Post
+    title: Предпросмотр страницы

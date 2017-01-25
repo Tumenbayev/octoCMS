@@ -9,7 +9,7 @@ list: $/slider/slider/models/slider/columns.yaml
 modelClass: Slider\Slider\Models\Slider
 
 # List Title
-title: Manage Sliders
+title: Управление слайдами
 
 # Link URL for each record
 recordUrl: slider/slider/slider/update/:id

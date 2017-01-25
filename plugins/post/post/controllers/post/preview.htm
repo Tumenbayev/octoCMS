@@ -1,6 +1,6 @@
 <?php Block::put('breadcrumb') ?>
     <ul>
-        <li><a href="<?= Backend::url('post/post/post') ?>">Post</a></li>
+        <li><a href="<?= Backend::url('post/post/post') ?>">Страница</a></li>
         <li><?= e($this->pageTitle) ?></li>
     </ul>
 <?php Block::endPut() ?>
@@ -14,6 +14,6 @@
 <?php else: ?>
 
     <p class="flash-message static error"><?= e($this->fatalError) ?></p>
-    <p><a href="<?= Backend::url('post/post/post') ?>" class="btn btn-default">Return to post list</a></p>
+    <p><a href="<?= Backend::url('post/post/post') ?>" class="btn btn-default">Вернуться к списку</a></p>
 
 <?php endif ?>
