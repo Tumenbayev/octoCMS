@@ -1,4 +1,4 @@
-url = '/:slug'
+url = ':slug'
 layout = 'post'
 ==
 use Post\Post\Components\Post;
@@ -6,5 +6,8 @@ use Post\Post\Components\Post;
 function onStart()
 {
   $this['post'] = Post::getPostBySlug($this->param('slug'));
+  if(Post::getPostBySlug($this->param('slug'))==null){
+    return \Response::make('К сожалению такой страницы не существует, вернемся обратно на <a href="/">главную</a>?', 404);
+  }
 }
 ==

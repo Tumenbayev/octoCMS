@@ -29,8 +29,6 @@ class Post extends ComponentBase
         return PostModel::whereIn('slug', $slugs)->orderBy('id', 'asc')->get();
     }
     public static function getPostBySlug($slug=null){
-
         return PostModel::where('slug', $slug)->first();
-    
     }
 }
