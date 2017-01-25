@@ -21,5 +21,7 @@ class Post extends Controller
         parent::__construct();
 
         BackendMenu::setContext('Post.Post', 'post', 'post');
+        $this->addJs("/themes/multi/assets/js/to_slug.js", "1.0.0");
+
     }
 }

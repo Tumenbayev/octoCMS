@@ -8,8 +8,8 @@ fields:
         required: true
     slug:
         label: Человеко-понятный URL
-        required: true
         placeholder: example (site.com/example)
+        required: true
     content:
         label: Описание
         type: richeditor #стандартный wysiwyg редактор

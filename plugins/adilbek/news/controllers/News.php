@@ -21,5 +21,6 @@ class News extends Controller
         parent::__construct();
 
         BackendMenu::setContext('Adilbek.News', 'news', 'news');
+        $this->addJs("/themes/multi/assets/js/to_slug.js", "1.0.0");
     }
 }
