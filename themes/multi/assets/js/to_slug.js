@@ -132,4 +132,7 @@ $(document).ready(function(){
 	$('#Form-field-News-title').on('input', function(e){
 		$('#Form-field-News-slug').val(url_slug($('#Form-field-News-title').val()));
 	});
+	$('#Form-field-Post-title').on('input', function(e){
+		$('#Form-field-Post-slug').val(url_slug($('#Form-field-Post-title').val()));
+	});
 });
