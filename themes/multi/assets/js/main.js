@@ -5,7 +5,7 @@ jQuery(function($) {'use strict';
 		Scroll();
 	});
 
-	$('.navbar-collapse ul li a').on('click', function() {  
+	$('.navbar-collapse ul li a').on('click', function() {
 		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
 		return false;
 	});
@@ -25,7 +25,7 @@ jQuery(function($) {'use strict';
 			if ( winTop > contentTop[i] - rangeTop ){
 				$('.navbar-collapse li.scroll')
 				.removeClass('active')
-				.eq(i).addClass('active');			
+				.eq(i).addClass('active');
 			}
 		})
 	};
@@ -49,12 +49,12 @@ jQuery(function($) {'use strict';
 		var time = 7; // time in seconds
 
 	 	var $progressBar,
-	      $bar, 
-	      $elem, 
-	      isPause, 
+	      $bar,
+	      $elem,
+	      isPause,
 	      tick,
 	      percentTime;
-	 
+
 	    //Init the carousel
 	    $("#main-slider").find('.owl-carousel').owlCarousel({
 	      slideSpeed : 500,
@@ -71,7 +71,7 @@ jQuery(function($) {'use strict';
 	      //autoHeight : true,
 	      transitionStyle : "fadeUp"
 	    });
-	 
+
 	    //Init progressBar where elem is $("#owl-demo")
 	    function progressBar(elem){
 	      $elem = elem;
@@ -80,7 +80,7 @@ jQuery(function($) {'use strict';
 	      //start counting
 	      start();
 	    }
-	 
+
 	    //create div#progressBar and div#bar then append to $(".owl-carousel")
 	    function buildProgressBar(){
 	      $progressBar = $("<div>",{
@@ -91,7 +91,7 @@ jQuery(function($) {'use strict';
 	      });
 	      $progressBar.append($bar).appendTo($elem);
 	    }
-	 
+
 	    function start() {
 	      //reset timer
 	      percentTime = 0;
@@ -99,7 +99,7 @@ jQuery(function($) {'use strict';
 	      //run interval every 0.01 second
 	      tick = setInterval(interval, 10);
 	    };
-	 
+
 	    function interval() {
 	      if(isPause === false){
 	        percentTime += 1 / time;
@@ -108,17 +108,17 @@ jQuery(function($) {'use strict';
 	         });
 	        //if percentTime is equal or greater than 100
 	        if(percentTime >= 100){
-	          //slide to next item 
+	          //slide to next item
 	          $elem.trigger('owl.next')
 	        }
 	      }
 	    }
-	 
-	    //pause while dragging 
+
+	    //pause while dragging
 	    function pauseOnDragging(){
 	      isPause = true;
 	    }
-	 
+
 	    //moved callback
 	    function moved(){
 	      //clear interval
@@ -141,7 +141,7 @@ jQuery(function($) {'use strict';
 			itemSelector : '.portfolio-item',
 			layoutMode : 'fitRows'
 		});
-		
+
 		$portfolio_selectors.on('click', function(){
 			$portfolio_selectors.removeClass('active');
 			$(this).addClass('active');
@@ -186,7 +186,7 @@ jQuery(function($) {'use strict';
 		$('.animated-number').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
 			var $this = $(this);
 			if (visible) {
-				$this.animateNumbers($this.data('digit'), false, $this.data('duration')); 
+				$this.animateNumbers($this.data('digit'), false, $this.data('duration'));
 				$this.unbind('inview');
 			}
 		});
@@ -211,23 +211,5 @@ jQuery(function($) {'use strict';
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
 	});
-
-	//Google Map
-	var latitude = $('#google-map').data('latitude');
-	var longitude = $('#google-map').data('longitude');
-	function initialize_map() {
-		var myLatlng = new google.maps.LatLng(latitude,longitude);
-		var mapOptions = {
-			zoom: 14,
-			scrollwheel: false,
-			center: myLatlng
-		};
-		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-		var marker = new google.maps.Marker({
-			position: myLatlng,
-			map: map
-		});
-	}
-	google.maps.event.addDomListener(window, 'load', initialize_map);
 
 });

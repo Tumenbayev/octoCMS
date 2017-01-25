@@ -13,11 +13,11 @@
                                 <img src="https://placeholdit.imgix.net/~text?txtsize=10&bg=45aed6&txtclr=ffffff&txt={{key+1}}&w=32&h=32" style="border-radius:10px;">
                             </div>
                             <div class="media-body" style="padding-top: 5px;">
-                                <h4 class="media-heading"><a href="/{{item.slug}}">{{item.title}}</a></h4>
+                                <h4 class="media-heading"><a href="{{url('/',item.slug)}}">{{item.title}}</a></h4>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
                 {% endfor %}
                 </div>
-            </div><!--/.row-->    
+            </div><!--/.row-->
         </div><!--/.container-->

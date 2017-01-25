@@ -7,17 +7,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/"><img src="{{ 'assets/images/logo.png'|theme }}" alt="logo" id="logo">
-                    </a>
+                    <a class="navbar-brand" href="{{url('/')}}"><img src="{{ 'assets/images/logo.png'|theme }}" alt="logo" id="logo"/></a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="/">Главная</a></li>
-                        <li class="scroll"><a href="/uslugi">Услуги</a></li>
+                        <li class="scroll active"><a href="{{url('/')}}">Главная</a></li>
+                        <li class="scroll"><a href="{{url('uslugi')}}">Услуги</a></li>
                         <li class="scroll"><a href="#services">Отзывы</a></li>
                         <li class="scroll"><a href="#portfolio">Наши сотрудники</a></li>
-                        <li class="scroll"><a href="#about">Контакты</a></li>             
+                        <li class="scroll"><a href="#about">Контакты</a></li>
                     </ul>
                 </div>
             </div><!--/.container-->
