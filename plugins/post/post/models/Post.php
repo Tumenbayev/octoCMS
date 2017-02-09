@@ -34,4 +34,8 @@ class Post extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = ['attachments' => ['System\Models\File']];
+
+    public function getCategoryOptions() {
+        return array(1=>'BeautyMed', 2=>'BeautySpa');
+    }
 }

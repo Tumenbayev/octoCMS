@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Team
+
+# Model Form Field configuration
+form: $/team/team/models/team/fields.yaml
+
+# Model Class name
+modelClass: Team\Team\Models\Team
+
+# Default redirect location
+defaultRedirect: team/team/team
+
+# Create page
+create:
+    title: Create Team
+    redirect: team/team/team/update/:id
+    redirectClose: team/team/team
+
+# Update page
+update:
+    title: Edit Team
+    redirect: team/team/team
+    redirectClose: team/team/team
+
+# Preview page
+preview:
+    title: Preview Team

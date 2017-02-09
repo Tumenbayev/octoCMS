@@ -26,9 +26,12 @@ class Post extends ComponentBase
     public function getServicePosts()
     {
         $slugs = ['rf---lifting', 'mezoterapiya', 'biorevitalizaciya', 'botulinoterapiya', 'ehlos-procedury', 'konturnaya-plastika', 'chistka-lica', 'fotoomolozhenie'];
-        return PostModel::whereIn('slug', $slugs)->orderBy('id', 'asc')->get();
+        return PostModel::whereIn('slug', $slugs)->where('category','=',1)->orderBy('id', 'asc')->get();
     }
-    public static function getPostBySlug($slug=null){
+    public function getBeautySpaPosts() {
+        return PostModel::where('category', 2)->orderBy('id', 'asc')->take(8)->get();
+    }
+    public static function getPostBySlug($slug=null) {
         return PostModel::where('slug', $slug)->first();
     }
 }

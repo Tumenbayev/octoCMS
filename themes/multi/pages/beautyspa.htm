@@ -1,0 +1,13 @@
+title = "Салон красоты Beauty and Spa"
+url = "/beautyspa"
+layout = "default2"
+[slider]
+[news]
+[post]
+[team]
+description = ""
+==
+public function onStart(){
+        $this['certs'] = glob('storage/app/media/legacy/*.{jpg,gif,png}', GLOB_BRACE);
+}
+==

@@ -1,0 +1,19 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: ФИО
+        required: true
+    description:
+        label: Описание
+        type: richeditor #стандартный wysiwyg редактор
+    position:
+        label: Должность
+    attachments:
+        label: Фото профиля
+        type: fileupload
+    is_published:
+        label: Показать на главной?
+        type: checkbox

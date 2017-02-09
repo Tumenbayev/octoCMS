@@ -13,6 +13,9 @@ fields:
     content:
         label: Описание
         type: richeditor #стандартный wysiwyg редактор
+    category:
+        label: Где опубликовать
+        type: dropdown
     attachments:
         label: Файлы
         type: fileupload

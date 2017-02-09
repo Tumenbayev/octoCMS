@@ -1,0 +1,58 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+    {% partial "meta2" %}
+
+<body id="home" class="homepage">
+
+<section id="main-slider">
+    {% partial "video" %}
+</section><!--/#main-slider-->
+
+<section id="cta" class="wow fadeIn">
+    <div class="container">
+        <div class="row">
+            {% content 'cta2.htm' %}
+        </div>
+    </div>
+</section><!--/#cta-->
+
+<section id="services" >
+    {% partial "services2" %}
+</section><!--/#services-->
+
+<section id="team">
+    {% partial "team" %}
+</section>
+<section id="portfolio">
+    {% partial "portfolio" %}
+</section><!--/#portfolio-->
+
+<section id="about">
+    {% partial "about" %}
+</section><!--/#about-->
+
+<section id="blog">
+    {% partial "media" %}
+</section><!--/#blog-->
+
+<footer id="footer">
+    {% partial "footer" %}
+</footer><!--/#footer-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/owl.carousel.min.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/mousescroll.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/smoothscroll.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/jquery.prettyPhoto.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/jquery.isotope.min.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/jquery.inview.min.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/wow.min.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/main.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/video.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>

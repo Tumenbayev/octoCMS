@@ -1,0 +1,23 @@
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Услуги</h2>
+                <p class="text-center wow fadeInDown">Компания BeautySpa представляет большой спектр услуг по тому, что делают салоны красоты.</p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                {% for key, item in post.getBeautySpaPosts %}
+                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=10&bg=45aed6&txtclr=ffffff&txt={{key+1}}&w=32&h=32" style="border-radius:10px;">
+                            </div>
+                            <div class="media-body" style="padding-top: 5px;">
+                                <h4 class="media-heading"><a href="{{url('/',item.slug)}}">{{item.title}}</a></h4>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                {% endfor %}
+                </div>
+            </div><!--/.row-->
+        </div><!--/.container-->
