@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Client
+
+# Model Form Field configuration
+form: $/client/client/models/client/fields.yaml
+
+# Model Class name
+modelClass: Client\Client\Models\Client
+
+# Default redirect location
+defaultRedirect: client/client/client
+
+# Create page
+create:
+    title: Create Client
+    redirect: client/client/client/update/:id
+    redirectClose: client/client/client
+
+# Update page
+update:
+    title: Edit Client
+    redirect: client/client/client
+    redirectClose: client/client/client
+
+# Preview page
+preview:
+    title: Preview Client

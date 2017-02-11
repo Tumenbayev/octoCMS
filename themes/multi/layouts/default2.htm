@@ -18,24 +18,33 @@ description = "Default layout"
     </div>
 </section><!--/#cta-->
 
-<section id="services" >
+<section id="services" class="wow fadeIn">
     {% partial "services2" %}
 </section><!--/#services-->
 
-<section id="team">
+<section id="team" class="wow fadeIn">
     {% partial "team" %}
 </section>
+
 <section id="portfolio">
     {% partial "portfolio" %}
 </section><!--/#portfolio-->
 
+<section id="cta2">
+    <div class="container">
+        <div class="row">
+            {% partial "cta2" %}    
+        </div>
+    </div>
+</section>
+
 <section id="about">
-    {% partial "about" %}
+    {% partial "about2" %}
 </section><!--/#about-->
 
-<section id="blog">
-    {% partial "media" %}
-</section><!--/#blog-->
+<section id="map">
+    {% partial "map2" %}
+</section>
 
 <footer id="footer">
     {% partial "footer" %}

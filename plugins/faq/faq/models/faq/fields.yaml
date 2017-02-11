@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Имя
+    email:
+        label: Email
+    comment:
+        label: Отзыв
+        type: richeditor
+    answer:
+        label: Ответ администратора
+        type: richeditor

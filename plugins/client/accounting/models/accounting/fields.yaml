@@ -1,0 +1,10 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    client_id:
+      label: Выберите клиента
+      type: dropdown
+    price:
+      label: Стоимость визита

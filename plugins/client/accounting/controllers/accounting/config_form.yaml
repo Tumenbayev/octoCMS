@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Accounting
+
+# Model Form Field configuration
+form: $/client/accounting/models/accounting/fields.yaml
+
+# Model Class name
+modelClass: Client\Accounting\Models\Accounting
+
+# Default redirect location
+defaultRedirect: client/accounting/accounting
+
+# Create page
+create:
+    title: Create Accounting
+    redirect: client/accounting/accounting/update/:id
+    redirectClose: client/accounting/accounting
+
+# Update page
+update:
+    title: Edit Accounting
+    redirect: client/accounting/accounting
+    redirectClose: client/accounting/accounting
+
+# Preview page
+preview:
+    title: Preview Accounting

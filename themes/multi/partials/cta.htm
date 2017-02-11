@@ -1,0 +1,36 @@
+                <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>BeautyMed</span></h2>
+                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Это новая современная клиника в г. Уральске, объединяющая сразу в себе два направления дерматокосметология и дерматовенерология.<br/>
+                BeautyMed - клиника, где могут получить квалифицированную помощь люди с дерматовенерологическими заболеваниями, а также первая в Западно - Казахстанской области лицензированная дерматокосметологическая клиника.я
+                </p>
+                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+	                <center>
+	                	<a class="btn btn-primary btn-lg" data-toggle="modal"  href="#callToAction">Заказать звонок?</a>
+	                </center>
+                </p>
+                <img class="img-responsive wow fadeIn" src="{{ 'assets/images/cta2/cta2-img.png'|theme }}" alt="" data-wow-duration="300ms" data-wow-delay="300ms">
+
+				<div class="control-popup modal fade" id="callToAction" tabindex="-1" role="dialog">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				                <h4 class="modal-title">Хотите чтобы, мы Вам перезвонили?</h4>
+				            </div>
+			                <form data-request="onEmailSend" data-request-update="'result': '#result'">
+					            <div class="modal-body">
+					            	<div class="form-group">
+					                	<input type="text" name="name" class="form-control" required placeholder="Ваше имя"/>
+					                </div>
+					                <div class="form-group">
+					                	<input type="text" name="phoneNum" class="form-control" required placeholder="Ваш номер телефона"/>
+					                </div>
+					                	<div id="result">{{ result }}</div>
+					            </div>
+					            <div class="modal-footer">
+					                <button type="button" class="btn btn-warning" data-dismiss="modal">Отменить</button>
+					                <button type="submit" class="btn btn-primary">Отправить</button>
+					            </div>
+				            </form>
+				        </div>
+				    </div>
+				</div>

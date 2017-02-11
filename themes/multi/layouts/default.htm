@@ -14,13 +14,14 @@ description = "Default layout"
     {% partial "slides" %}
 </section><!--/#main-slider-->
 
-<section id="cta" class="wow fadeIn">
+<section id="cta2">
     <div class="container">
         <div class="row">
-            {% content 'cta.htm' %}
+            {% partial "cta" %}    
         </div>
     </div>
-</section><!--/#cta-->
+</section>
+
 
 <section id="services" >
     {% partial "services" %}
@@ -37,6 +38,13 @@ description = "Default layout"
 <section id="blog">
     {% partial "news" %}
 </section><!--/#blog-->
+
+<section id="map">
+    <div class="text-center">
+        <h2>Схема проезда и контакты</h2>
+    </div>
+    {% partial "map" %}
+</section>
 
 <footer id="footer">
     {% partial "footer" %}

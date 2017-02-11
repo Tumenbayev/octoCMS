@@ -11,4 +11,17 @@ meta_keywords = "Клиника, косметолог, услуга, Ураль�
 public function onStart(){
         $this['certs'] = glob('storage/app/media/legacy/*.{jpg,gif,png}', GLOB_BRACE);
 }
+public function onEmailSend(){
+	$values = post();
+	if(!empty($values['name']) && !empty($values['phoneNum']))
+	{
+		$params = ['name' => $values['name'], 'phoneNum' => $values['phoneNum']];
+		Mail::sendTo('adilbek.tumenbayev@gmail.com', 'mailTemplate', $params);
+		return ['#result' => '<div class="alert alert-success">Ваш запрос на звонок принят, ожидайте звонка от нашего оператора!</div>'];
+	}
+	else
+	{
+		return ['#result' => '<div class="alert alert-warning">Заполните все поля!</div>'];
+	}
+}
 ==

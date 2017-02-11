@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Faq
+
+# Model Form Field configuration
+form: $/faq/faq/models/faq/fields.yaml
+
+# Model Class name
+modelClass: Faq\Faq\Models\Faq
+
+# Default redirect location
+defaultRedirect: faq/faq/faq
+
+# Create page
+create:
+    title: Create Faq
+    redirect: faq/faq/faq/update/:id
+    redirectClose: faq/faq/faq
+
+# Update page
+update:
+    title: Edit Faq
+    redirect: faq/faq/faq
+    redirectClose: faq/faq/faq
+
+# Preview page
+preview:
+    title: Preview Faq

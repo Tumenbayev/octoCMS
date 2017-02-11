@@ -1,0 +1,22 @@
+url = '/otzyvy'
+layout = 'otzyvy'
+title = 'Отзывы и ответы на вопросы'
+[faq]
+==
+	use Faq\Faq\Models\Faq;
+public function onCommentAdd() {
+	$values = post();
+	if (!empty($values['name']) && !empty($values['text'])) {
+		$model = new Faq();
+		$model->name = $values['name'];
+		$model->email = $values['email'];
+		$model->comment = $values['text'];
+		$model->save();
+		$this['result'] = 'Ваш комментарий успешно сохранен!';
+	}
+	else {
+		$this['result'] = 'Заполните поля имя и соообщение!';
+	}
+	return $this['result'];
+}
+==

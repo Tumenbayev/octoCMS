@@ -1,0 +1,14 @@
+<ul style="list-style:none;">
+	{% for item in faq.getFaqs %}
+	<li>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<strong>{{item.name}}</strong> <span class="text-muted">{{item.created_at}}</span>
+			</div>
+			<div class="panel-body">
+				{{item.comment | raw}}
+			</div><!-- /panel-body -->
+		</div><!-- /panel panel-default -->
+		{% endfor %}
+	</li>
+</ul>

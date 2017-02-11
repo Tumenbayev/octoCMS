@@ -1,0 +1,19 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    name:
+        label: ФИО
+        searchable: true
+    price:
+        label: Общее потраченное количество денег
+        searchable: false
+        sortable: false
+    visits: 
+        label: Количество посещении
+        searchable: false
+        sortable: false
