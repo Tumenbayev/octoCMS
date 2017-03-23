@@ -10,12 +10,8 @@ description = "Default layout"
     {% partial "video" %}
 </section><!--/#main-slider-->
 
-<section id="cta" class="wow fadeIn">
-    <div class="container">
-        <div class="row">
-            {% content 'cta2.htm' %}
-        </div>
-    </div>
+<section id="cta" class="wow fadeIn" style="padding: 0; margin: 0;">
+            {% content 'cta.htm' %}
 </section><!--/#cta-->
 
 <section id="services" class="wow fadeIn">
@@ -42,6 +38,10 @@ description = "Default layout"
     {% partial "about2" %}
 </section><!--/#about-->
 
+<section id="about">
+    {% partial "media" %}
+</section><!--/#about-->
+
 <section id="map">
     {% partial "map2" %}
 </section>
@@ -53,8 +53,8 @@ description = "Default layout"
     <script type="text/javascript" src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
     <script type="text/javascript" src="{{ 'assets/js/owl.carousel.min.js'|theme }}"></script>
     <script type="text/javascript" src="{{ 'assets/js/mousescroll.js'|theme }}"></script>
-    <script type="text/javascript" src="{{ 'assets/js/smoothscroll.js'|theme }}"></script>
-    <script type="text/javascript" src="{{ 'assets/js/jquery.prettyPhoto.js'|theme }}"></script>
+<!--     <script type="text/javascript" src="{{ 'assets/js/smoothscroll.js'|theme }}"></script>
+ -->    <script type="text/javascript" src="{{ 'assets/js/jquery.prettyPhoto.js'|theme }}"></script>
     <script type="text/javascript" src="{{ 'assets/js/jquery.isotope.min.js'|theme }}"></script>
     <script type="text/javascript" src="{{ 'assets/js/jquery.inview.min.js'|theme }}"></script>
     <script type="text/javascript" src="{{ 'assets/js/wow.min.js'|theme }}"></script>
