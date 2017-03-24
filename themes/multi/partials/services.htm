@@ -1,16 +1,22 @@
-        <div class="container">
+==
+<div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Услуги</h2>
                 <p class="text-center wow fadeInDown">Компания BeautyMed представляет большой спектр услуг по тому, что делают салоны красоты.</p>
             </div>
 
             <div class="row">
-                <div class="features">
+            <center>
+                <div class="features listA">
                 {% for key, item in post.getServicePosts %}
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box">
+                    <div class="col-md-4 col-sm-6 wow fadeInUp listA-item" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box listA-content">
                             <div class="pull-left">
+                            {% if item.attachments[0].path %}
+                                <img src="{{item.attachments[0].path}}" style="border-radius:10px; max-width:220px; max-height:150px;"/>
+                            {% else %}
                                 <img src="https://placeholdit.imgix.net/~text?txtsize=10&bg=45aed6&txtclr=ffffff&txt={{key+1}}&w=32&h=32" style="border-radius:10px;">
+                            {% endif %}
                             </div>
                             <div class="media-body" style="padding-top: 5px;">
                                 <h4 class="media-heading"><a href="{{url('/',item.slug)}}">{{item.title}}</a></h4>
@@ -19,5 +25,6 @@
                     </div><!--/.col-md-4-->
                 {% endfor %}
                 </div>
+                </center>
             </div><!--/.row-->
         </div><!--/.container-->

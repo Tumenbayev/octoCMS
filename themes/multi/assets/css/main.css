@@ -1051,3 +1051,35 @@ transition-delay:.2s;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
+
+/*Flex items*/
+.listA {
+  display: flex;
+  flex-wrap: wrap;
+}
+.listA-item {
+    display: flex; 
+  padding: 0.5em;
+    width: 100%;
+}
+@media all and (min-width: 40em) {
+  .listA-item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  .listA-item {
+    width: 33.33%;
+  }
+}
+.listA-content {
+    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+    width: 100%;
+    text-align:left;
+}
+.listA-content p {
+    flex: 1 0 auto;
+}
