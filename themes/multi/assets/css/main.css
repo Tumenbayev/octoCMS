@@ -173,6 +173,10 @@ ul.nostyle i {
   height: 55px;
   width: 220px;
 }
+#logo1 {
+  height: 90px;
+  width: 220px;
+}
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {
     background: rgba(255, 255, 255, 0.9);

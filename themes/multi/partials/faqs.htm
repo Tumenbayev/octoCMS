@@ -7,12 +7,14 @@
 			</div>
 			<div class="panel-body">
 				{{item.comment | raw}}
+					{% if item.answer %}
 					<div class="panel-heading">
 						<strong>Ответ администрации</strong>
 					</div>
 					<div class="panel-body">
 						{{item.answer | raw}}
 					</div><!-- /panel-body -->
+					{% endif %}
 			</div><!-- /panel-body -->
 		</div><!-- /panel panel-default -->
 		{% endfor %}
